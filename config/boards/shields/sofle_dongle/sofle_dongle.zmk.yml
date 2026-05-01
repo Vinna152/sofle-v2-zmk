@@ -1,0 +1,10 @@
+file_format: "1"
+id: sofle_dongle
+name: Sofle Dongle
+type: shield
+url: https://github.com/josefadamcik/SofleKeyboard
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - sofle_dongle

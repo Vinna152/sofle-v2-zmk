@@ -1,0 +1,134 @@
+{
+  "root": "/Users/vincentvorholter/dev/sofle-v2-zmk",
+  "node_count": 8,
+  "edge_count": 7,
+  "file_count": 8,
+  "symbol_count": 0,
+  "nodes": [
+    {
+      "id": "sofle.yaml",
+      "kind": "file",
+      "path": "sofle.yaml",
+      "ext": ".yaml",
+      "size": 2979,
+      "keywords": [],
+      "content": "layout: {qmk_keyboard: sofle/rev1}\nlayers:\n  default:\n  - ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9']\n  - ['0', '', ESC, Q, W, E, R, T, Y, U]\n  - [I, O, P, BSPC, TAB, A, S, D, F, G]\n  - [H, J, K, L, ;, '''', LSHFT, Z, X, C]\n  - [V, B, MUTE, '', N, M, ',', ., /, RSHFT]\n  - [LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]\n  lower:\n  - - {t: \u25bd, type: trans}\n    - F1\n    - F2\n    - F3\n    - F4\n    - F5\n    - F6\n    - F7\n    - F8\n    - F9\n  - [F10, F11, '`', '1', '2', '3', '4', '5', '6', '7']\n  - - '8'\n    - '9'\n    - '0'\n    - F12\n    - {t: \u25bd, type: trans}\n    - '!'\n    - '@'\n    - '#'\n    - $\n    - '%'\n  - - ^\n    - '&'\n    - KP MULTIPLY\n    - (\n    - )\n    - '|'\n    - {t: \u25bd, type: trans}\n    - '='\n    - '-'\n    - KP PLUS\n  - - '{'\n    - '}'\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - '['\n    - ']'\n    - ;\n    - ':'\n    - \\\n    - {t: \u25bd, type: trans}\n  - - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {type: held}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n  raise:\n  - - BT CLR\n    - {t: BT, h: '0'}\n    - {t: BT, h: '1'}\n    - {t: BT, h: '2'}\n    - {t: BT, h: '3'}\n    - {t: BT, h: '4'}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n  - - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - INS\n    - PSCRN\n    - CMENU\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - PG UP\n    - {t: \u25bd, type: trans}\n  - - UP\n    - {t: \u25bd, type: trans}\n    - '0'\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - LALT\n    - LCTRL\n    - LSHFT\n    - {t: \u25bd, type: trans}\n    - CLCK\n  - - PG DN\n    - LEFT\n    - DOWN\n    - RIGHT\n    - DEL\n    - BSPC\n    - {t: \u25bd, type: trans}\n    - UNDO\n    - CUT\n    - COPY\n  - - PASTE\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n  - - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {type: held}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n    - {t: \u25bd, type: trans}\n  adjust:\n  - - BT CLR\n    - {t: BT, h: '0'}\n    - {t: BT, h: '1'}\n    - {t: BT, h: '2'}\n    - {t: BT, h: '3'}\n    - {t: BT, h: '4'}\n    - ''\n    - ''\n    - ''\n    - ''\n  - ['', '', EP TOG, RGB HUD, RGB HUI, RGB SAD, RGB SAI, RGB EFF, '', '']\n  - ['', '', '', '', '', RGB BRD, RGB BRI, '', '', '']\n  - ['', '', '', '', '', '', '', '', '', '']\n  - ['', '', RGB TOG, '', '', '', '', '', '', '']\n  - - ''\n    - ''\n    - ''\n    - {type: held}\n    - ''\n    - ''\n    - {type: held}\n    - ''\n    - ''\n    - ''\n",
+      "summary": "layout: {qmk_keyboard: sofle/rev1}.",
+      "file_hash": "515f350b"
+    },
+    {
+      "id": "README.md",
+      "kind": "file",
+      "path": "README.md",
+      "ext": ".md",
+      "size": 5599,
+      "keywords": [],
+      "content": "[![Build Status](../../actions/workflows/build.yml/badge.svg)](../../actions)\n[![Download Firmware](https://img.shields.io/badge/Download-Firmware-blue?logo=github)](../../releases/latest)\n\n# Sofle V2 Keyboard Guide\nThis guide is for flashing the Ergomech Sofle V2 Keyboard. The Sofle V2 is 6\u00d74+5 keys column-staggered split keyboard, using Cherry switches.\n\n# ErgoMech Sofle V2 Wireless\nThe Ergomech Sofle V2 Wireless uses a Nice!Nano microcontroller and runs the ZMK firmware. This guide will show you how to flash the ZMK firmware to the Nice!Nano microcontroller.\n\n## Default keymap\nThe default keymap of this keyboard can be found here:\n![Default Keymap](./keymap-drawer/sofle.svg)\n\n## Flashing the Sofle V2\nThe ZMK cli tool would typically have you step through several questions to generate the necessary code to flash the firmware then upload it to a new repository on GitHub.\nHowever, Ergomech has already done this for you. You can find the repository [here](https://github.com/ergomechstore/sofle-v2-nicenano-oled). Assuming you already have a GitHub account,\nyou can fork the repository, and make modifications to the keymap files in the future. For now, the guide will continue with the assumption that you have forked the repository.\n\n### Running the Workflow\nThe repository has a GitHub workflow that leverages the zmkfirmware/zmk repository to build the firmware. The workflow will build the firmware and upload it as an artifact to the repository.\nThe workflow is triggered on push, pull_request, and manually via workflow_dispatch. You can trigger the workflow manually by going to the Actions tab in your forked repository and selecting the workflow.\n\n### Workflow Artifact\nOnce the workflow has completed, you can download the artifact from the Actions tab. The artifact will be a .zip file that contains the firmware. Extract the .zip file in your\nlocal directory. The extracted files will include:\n- `sofle_right-nice_nano_v2-zmk.uf2`\n- `sofle_left-nice_nano_v2-zmk.uf2`\n- `settings_reset-nice_nano_v2-zmk.uf2`\n\n### Flashing the keymap and firmware\n#### Steps to ensure successful flashing\n- Keep in mind that the power switch on the wireless Ergomech Sofle V2 is only **one** of the ways that the keyboard can be powered. The other way is to plug in the USB-C cable.\nWhen flashing one side of the keyboard, the other side must be off. \n- The keyboard must be in bootloader mode to flash the firmware. To enter the bootloader mode, press the \"BOOT\" button twice in quick succession. \n- If you are having trouble flashing, you can always flash the `settings_reset-nice_nano_v2-zmk.uf2` file first. This is a good way to make sure \nthat the keyboard is in a known state before flashing the firmware. The `reset` flash can be visually confirmed by the screen on the Nice!Nano microcontroller \nnot displaying anything after the flash is complete.\n\n#### Flashing Order\nThere is no required order to flash the firmware. You can flash the left or right side first. Assuming that you are attempting to flash the sides with the correct\nfile (i.e. the right side with the `sofle_right-nice_nano_v2-zmk.uf2` file), you may find it helpful to follow the following order:\n1. Confirm both sides of the keyboard are off.\n2. Flash the right side of the keyboard, unplug the USB-C cable, and set it aside.\n3. Flash the left side of the keyboard, leaving it plugged in after.\n4. Turn on the right side of the keyboard. You should see the screen on the Nice!Nano microcontroller light up and display a checkmark next to the wifi icon if the sides have connected.\n5. Open you favorite text editor and test the keyboard.\n\n\n#### Flashing the firmware\n1. Connect the keyboard to your computer via USB-C cable.\n2. Press the \"BOOT\" button twice in quick succession to enter bootloader mode.\n3. The keyboard should appear as a USB drive on your computer.\n4. Drag and drop the `uf2` file that coincides with the side of the keyboard you are flashing onto the USB drive that represents the keyboard.\n5. The keyboard will automatically reboot and the new firmware will be flashed.\n\n**Note:** Some operating systems may show a failure when the keyboard reboots, or the USB drive may disappear. This is normal and the keyboard should be flashed successfully.\nThe keyboard flashing has been confirmed to work successfully on Windows 10, and Linux. \n\n## Modifying the keymap\n\n### ZMK Keymap\nWe recommend at least reviewing the [ZMK Keymap documentation](https://zmk.dev/docs/features/keymaps) to understand the structure of the keymap files. This\nwill help you understand the changes we are making to the generated files. While not required, most example keymaps attempt to show the layout of the keyboard\nshown as a comment underneath the layer declaration.\n\n### ZMK Firmware\nZMK does provide an online [keymap editor](https://nickcoutsos.github.io/keymap-editor) and you can use this to change the keymap, this repo is already setup for the use of this editor.\n\n#### Modifying the keymap with the keymap editor\n\n#### Modifying the keymap manually\nThe exact spacing doesn't matter, but keeping the indentation consistent can be helpful for reading your keymap files. If you indent each button it will be easier\nto confirm the structure of the keymap. Take a look at the [default keymap](config/sofle.keymap) to see how this was done. \n\nThe Ergomech Sofle V2 has a 5 way switch on the right side keyboard. The location of the key presses on the 5 way switch are on the last line of the `bindings` section of each layer.\nAs long as the correct number of entries exist on that row, the 5 way switch will work. \n",
+      "summary": "[![Build Status](../../actions/workflows/build.yml/badge.svg)](../../actions).",
+      "file_hash": "153ac472"
+    },
+    {
+      "id": "build.yaml",
+      "kind": "file",
+      "path": "build.yaml",
+      "ext": ".yaml",
+      "size": 688,
+      "keywords": [],
+      "content": "# This file generates the GitHub Actions matrix\n# For simple board + shield combinations, add them\n# to the top level board and shield arrays, for more\n# control, add individual board + shield combinations to\n# the `include` property, e.g:\n#\n# board: [ \"nice_nano_v2\" ]\n# shield: [ \"corne_left\", \"corne_right\" ]\n# include:\n#   - board: bdn9_rev2\n#   - board: nice_nano_v2\n#     shield: reviung41\n#\n---\ninclude:\n  - board: nice_nano_v2\n    shield: sofle_left\n    snippet: studio-rpc-usb-uart\n    cmake-args: -DCONFIG_ZMK_STUDIO=y\n  - board: nice_nano_v2\n    shield: sofle_right\n  - board: nice_nano_v2\n    shield: settings_reset\n  - board: nice_nano_v2\n    shield: sofle_prospector_adapter",
+      "summary": "This file generates the GitHub Actions matrix.",
+      "file_hash": "2d663694"
+    },
+    {
+      "id": "CLAUDE.md",
+      "kind": "file",
+      "path": "CLAUDE.md",
+      "ext": ".md",
+      "size": 4020,
+      "keywords": [],
+      "content": "<!-- dgc-policy-v11 -->\n# Dual-Graph Context Policy\n\nThis project uses a local dual-graph MCP server for efficient context retrieval.\n\n## MANDATORY: Always follow this order\n\n1. **Call `graph_continue` first** \u2014 before any file exploration, grep, or code reading.\n\n2. **If `graph_continue` returns `needs_project=true`**: call `graph_scan` with the\n   current project directory (`pwd`). Do NOT ask the user.\n\n3. **If `graph_continue` returns `skip=true`**: project has fewer than 5 files.\n   Do NOT do broad or recursive exploration. Read only specific files if their names\n   are mentioned, or ask the user what to work on.\n\n4. **Read `recommended_files`** using `graph_read` \u2014 **one call per file**.\n   - `graph_read` accepts a single `file` parameter (string). Call it separately for each\n     recommended file. Do NOT pass an array or batch multiple files into one call.\n   - `recommended_files` may contain `file::symbol` entries (e.g. `src/auth.ts::handleLogin`).\n     Pass them verbatim to `graph_read(file: \"src/auth.ts::handleLogin\")` \u2014 it reads only\n     that symbol's lines, not the full file.\n   - Example: if `recommended_files` is `[\"src/auth.ts::handleLogin\", \"src/db.ts\"]`,\n     call `graph_read(file: \"src/auth.ts::handleLogin\")` and `graph_read(file: \"src/db.ts\")`\n     as two separate calls (they can be parallel).\n\n5. **Check `confidence` and obey the caps strictly:**\n   - `confidence=high` -> Stop. Do NOT grep or explore further.\n   - `confidence=medium` -> If recommended files are insufficient, call `fallback_rg`\n     at most `max_supplementary_greps` time(s) with specific terms, then `graph_read`\n     at most `max_supplementary_files` additional file(s). Then stop.\n   - `confidence=low` -> Call `fallback_rg` at most `max_supplementary_greps` time(s),\n     then `graph_read` at most `max_supplementary_files` file(s). Then stop.\n\n## Token Usage\n\nA `token-counter` MCP is available for tracking live token usage.\n\n- To check how many tokens a large file or text will cost **before** reading it:\n  `count_tokens({text: \"<content>\"})`\n- To log actual usage after a task completes (if the user asks):\n  `log_usage({input_tokens: <est>, output_tokens: <est>, description: \"<task>\"})`\n- To show the user their running session cost:\n  `get_session_stats()`\n\nLive dashboard URL is printed at startup next to \"Token usage\".\n\n## Rules\n\n- Do NOT use `rg`, `grep`, or bash file exploration before calling `graph_continue`.\n- Do NOT do broad/recursive exploration at any confidence level.\n- `max_supplementary_greps` and `max_supplementary_files` are hard caps - never exceed them.\n- Do NOT dump full chat history.\n- Do NOT call `graph_retrieve` more than once per turn.\n- After edits, call `graph_register_edit` with the changed files. Use `file::symbol` notation (e.g. `src/auth.ts::handleLogin`) when the edit targets a specific function, class, or hook.\n\n## Context Store\n\nWhenever you make a decision, identify a task, note a next step, fact, or blocker during a conversation, call `graph_add_memory`.\n\n**To add an entry:**\n```\ngraph_add_memory(type=\"decision|task|next|fact|blocker\", content=\"one sentence max 15 words\", tags=[\"topic\"], files=[\"relevant/file.ts\"])\n```\n\n**Do NOT write context-store.json directly** \u2014 always use `graph_add_memory`. It applies pruning and keeps the store healthy.\n\n**Rules:**\n- Only log things worth remembering across sessions (not every minor detail)\n- `content` must be under 15 words\n- `files` lists the files this decision/task relates to (can be empty)\n- Log immediately when the item arises \u2014 not at session end\n\n## Session End\n\nWhen the user signals they are done (e.g. \"bye\", \"done\", \"wrap up\", \"end session\"), proactively update `CONTEXT.md` in the project root with:\n- **Current Task**: one sentence on what was being worked on\n- **Key Decisions**: bullet list, max 3 items\n- **Next Steps**: bullet list, max 3 items\n\nKeep `CONTEXT.md` under 20 lines total. Do NOT summarize the full conversation \u2014 only what's needed to resume next session.\n",
+      "summary": "<!-- dgc-policy-v11 -->.",
+      "file_hash": "78a3b1a3"
+    },
+    {
+      "id": "config/west.yml",
+      "kind": "file",
+      "path": "config/west.yml",
+      "ext": ".yml",
+      "size": 219,
+      "keywords": [],
+      "content": "manifest:\n  remotes:\n    - name: zmkfirmware\n      url-base: https://github.com/zmkfirmware\n  projects:\n    - name: zmk\n      remote: zmkfirmware\n      revision: v0.3\n      import: app/west.yml\n  self:\n    path: config\n",
+      "summary": "- name: zmkfirmware.",
+      "file_hash": "0fd3ceb5"
+    },
+    {
+      "id": "keymap-drawer/sofle.yaml",
+      "kind": "file",
+      "path": "keymap-drawer/sofle.yaml",
+      "ext": ".yaml",
+      "size": 2808,
+      "keywords": [],
+      "content": "layout: {zmk_keyboard: sofle}\nlayers:\n  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DELETE, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT,\n    Z, X, C, V, B, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]\n  lower:\n  - '&studio_unlock'\n  - F1\n  - F2\n  - F3\n  - F4\n  - F5\n  - F6\n  - F7\n  - F8\n  - F9\n  - F10\n  - F11\n  - '`'\n  - '1'\n  - '2'\n  - '3'\n  - '4'\n  - '5'\n  - '6'\n  - '7'\n  - '8'\n  - '9'\n  - '0'\n  - F12\n  - {t: \u25bd, type: trans}\n  - '!'\n  - '@'\n  - '#'\n  - $\n  - '%'\n  - ^\n  - '&'\n  - KP MULTIPLY\n  - (\n  - )\n  - '|'\n  - {t: \u25bd, type: trans}\n  - '='\n  - '-'\n  - KP PLUS\n  - '{'\n  - '}'\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - '['\n  - ']'\n  - ;\n  - ':'\n  - \\\n  - {t: \u25bd, type: trans}\n  - '&studio_unlock'\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {type: held}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  raise:\n  - BT CLR\n  - {t: BT, h: '0'}\n  - {t: BT, h: '1'}\n  - {t: BT, h: '2'}\n  - {t: BT, h: '3'}\n  - {t: BT, h: '4'}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - INS\n  - PSCRN\n  - CMENU\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - PG UP\n  - {t: \u25bd, type: trans}\n  - UP\n  - {t: \u25bd, type: trans}\n  - '0'\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - LALT\n  - LCTRL\n  - LSHFT\n  - {t: \u25bd, type: trans}\n  - CLCK\n  - PG DN\n  - LEFT\n  - DOWN\n  - RIGHT\n  - DEL\n  - BSPC\n  - {t: \u25bd, type: trans}\n  - UNDO\n  - CUT\n  - COPY\n  - PASTE\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {type: held}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  - {t: \u25bd, type: trans}\n  adjust:\n  - BT CLR\n  - {t: BT, h: '0'}\n  - {t: BT, h: '1'}\n  - {t: BT, h: '2'}\n  - {t: BT, h: '3'}\n  - {t: BT, h: '4'}\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - EP TOG\n  - RGB HUD\n  - RGB HUI\n  - RGB SAD\n  - RGB SAI\n  - RGB EFF\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - RGB BRD\n  - RGB BRI\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - RGB TOG\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - ''\n  - {type: held}\n  - ''\n  - ''\n  - {type: held}\n  - ''\n  - ''\n  - ''\n",
+      "summary": "layout: {zmk_keyboard: sofle}.",
+      "file_hash": "0cddcfde"
+    },
+    {
+      "id": ".github/workflows/keymap_drawer.yaml",
+      "kind": "file",
+      "path": ".github/workflows/keymap_drawer.yaml",
+      "ext": ".yaml",
+      "size": 1033,
+      "keywords": [],
+      "content": "# Example for using the keymap-drawer ZMK user config workflow\nname: Draw ZMK keymaps\non:\n  workflow_dispatch:  # can be triggered manually\n  push:               # automatically run on changes to following paths\n    paths:\n      - \"config/*.keymap\"\n      - \"config/*.dtsi\"\n      - \"keymap_drawer.config.yaml\"\n      # - 'boards/*/*/*.keymap'\n\njobs:\n  draw:\n    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main\n    permissions:\n      contents: write  # allow workflow to commit to the repo\n    with:\n      keymap_patterns: \"config/*.keymap\"        # path to the keymaps to parse\n      config_path: \"keymap_drawer.config.yaml\"  # config file, ignored if not exists\n      output_folder: \"keymap-drawer\"            # path to save produced SVG and keymap YAML files\n      json_path: \"config/\"\n      parse_args: \"\"  # map of extra args to pass to `keymap parse`, e.g. \"corne:'-l Def Lwr Rse' cradio:''\"\n      draw_args: \"\"  # map of extra args to pass to `keymap draw`, e.g. \"corne:'-k corne_rotated' cradio:'-k paroxysm'\"\n",
+      "summary": "Example for using the keymap-drawer ZMK user config workflow.",
+      "file_hash": "d60ffd32"
+    },
+    {
+      "id": ".github/workflows/build.yml",
+      "kind": "file",
+      "path": ".github/workflows/build.yml",
+      "ext": ".yml",
+      "size": 941,
+      "keywords": [],
+      "content": "name: Build ZMK Firmware\n\non:\n  push:\n    branches:\n      - master\n      - sofle_hybrid_rgb_rev5\n  workflow_dispatch:\n\npermissions:\n  contents: write\n\njobs:\n  build:\n    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3\n\n  create_release_master:\n    if: github.event_name == 'push' && github.ref == 'refs/heads/master'\n    needs: build\n    runs-on: ubuntu-latest\n    steps:\n      - name: Download firmware artifacts\n        uses: actions/download-artifact@v4\n        with:\n          name: firmware\n\n      - name: Get current date\n        id: date\n        run: echo \"date=$(date +'%Y-%m-%d')\" >> $GITHUB_OUTPUT\n\n      - name: Create Release with firmware\n        uses: softprops/action-gh-release@v1\n        with:\n          tag_name: ${{ steps.date.outputs.date }}-${{ github.sha }}\n          name: Firmware ${{ steps.date.outputs.date }} - master\n          body: Build from commit ${{ github.sha }}\n          files: '*.uf2'\n",
+      "summary": "name: Build ZMK Firmware.",
+      "file_hash": "74b3c592"
+    }
+  ],
+  "edges": [
+    {
+      "from": "README.md",
+      "to": "/actions/workflows/build.yml",
+      "rel": "references"
+    },
+    {
+      "from": "CLAUDE.md",
+      "to": "src/auth.ts",
+      "rel": "references"
+    },
+    {
+      "from": "CLAUDE.md",
+      "to": "src/db.ts",
+      "rel": "references"
+    },
+    {
+      "from": "CLAUDE.md",
+      "to": "relevant/file.ts",
+      "rel": "references"
+    },
+    {
+      "from": "config/west.yml",
+      "to": "app/west.yml",
+      "rel": "references"
+    },
+    {
+      "from": ".github/workflows/keymap_drawer.yaml",
+      "to": "github/workflows/draw-zmk.yml",
+      "rel": "references"
+    },
+    {
+      "from": ".github/workflows/build.yml",
+      "to": "github/workflows/build-user-config.yml",
+      "rel": "references"
+    }
+  ]
+}
