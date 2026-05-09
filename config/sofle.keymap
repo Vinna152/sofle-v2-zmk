@@ -31,6 +31,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            display-name = "BASE";
             label = "default";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -52,6 +53,7 @@
         };
 
         lower_layer {
+            display-name = "LOWR";
             label = "lower";
 
             // TODO: Some binds are waiting for shifted keycode support.
@@ -74,6 +76,7 @@
         };
 
         raise_layer {
+            display-name = "RAIZ";
             label = "raise";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -102,6 +105,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
+            display-name = "ADJU";
             label = "adjust";
             bindings = <
 &bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
