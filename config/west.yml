@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: prospector-zmk-module
       remote: vinna152
-      revision: 9daeeb725df8c65cfd5f23f815374225756ce4d2
+      revision: 5bbf979e479a786a6ca3f3d650736994f2900af3
   self:
     path: config
